@@ -61,18 +61,36 @@ Rust provides mechanism's so solve the errors related to memory safety during co
 
 Evaluation of two core concepts with pracital examples and theory.
 
-### Intro: Detailed deep dive into one feature
-Decide between one of the two core mechanisms with related concepts:
-1. Ownership: Concept of Temporal safety
-2. Borrowing & Lifetimes: Concept of Aliasing and lifetime soundness
+### Intro: Detailed deep dive into core feature of Rust **Ownership**
+Introduction in what Ownership means in Rust.
+Discuss base concepts:
+- Stack vs Heap
+- Basic Rust Programming Concepts
+- Soundness
 
 ### Feature overview
+Explain how the following methods of ownership work:
 
-### Why it works? Theory (perhaps with partial proof)
+- Ownership Rules
+- Borrowing
+- Rerferences
+
+### Why it works? The Theory
+There is a lot of theoretical research work about the Soundness of Rust.
+
+It could be interesting here to explain just the concepts which are used to proof such a soundness. If soundness could be fully proven, this means that it is guaranteed that Rust code can not cause undefined behaviour.
+
+The Rust project has a lot of interesting publications about this topic. Especially this one could be interesting to understand partifularly the base concepts.
 
 ### Practical exmaple
 
+Take one of the examples discussed in the intro and translate it to Rust.
+
 ### Analysis and comparison to C
+Select some metrics for final analysis to measure:
+- memory footprint
+- runtime performance
+- compile time
 
 ## Sources
 
@@ -84,3 +102,6 @@ Maybe great to pick one and break this one down.
 - [Oxide: The Essence of Rust](https://arxiv.org/pdf/1903.00982) 
 - [ConSORT: Context- and Flow-Sensitive Ownership Refinement Types for Imperative Programs](https://arxiv.org/pdf/2002.07770)
 - [Ownership Types: A Survey](https://ilyasergey.net/papers/ownership-survey.pdf)
+- [Rustbelt](https://plv.mpi-sws.org/rustbelt/)
+- [RustBelt: Securing the Foundations of the Rust
+Programming Language](https://hal.science/hal-01633165v2/document)
