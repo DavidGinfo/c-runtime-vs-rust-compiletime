@@ -1,1 +1,0 @@
-C:\Users\david\HKA-lokal\Semester_5\Seminararbeit\c-runtime-vs-rust-compiletime\rust_projects\hello_cargo\target\debug\hello_cargo.exe: C:\Users\david\HKA-lokal\Semester_5\Seminararbeit\c-runtime-vs-rust-compiletime\rust_projects\hello_cargo\src\main.rs
