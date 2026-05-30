@@ -64,11 +64,7 @@
     #if text != none [
       #stack(
         spacing: 0.5em,
-        if calc.even(loc.page()) {
-          align(left)[#text]
-        } else {
-          align(right)[#text]
-        },
+        align(left)[#text],
         line(length: 100%, stroke: 0.5pt)
       )
     ] else []
@@ -106,4 +102,4 @@
 #include "3-speicher-sicherheit-in-rust.typ"
 #include "4-fazit.typ"
 
-#bibliography("bibliography.bib", style: "ieee", full: false, title: [Literaturverzeichnis])
+#bibliography("Seminararbeit.bib", style: "ieee", full: false, title: [Literaturverzeichnis])

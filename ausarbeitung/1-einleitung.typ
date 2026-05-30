@@ -1,3 +1,11 @@
 = Einleitung
-#lorem(200)
-@loefTruthProposition
+
+Sicherheit ist ein zentrales Thema in der Softwareentwicklung. Angreifer entwickeln immer wieder neue Methoden, um Softwaresystemen Schaden zuzufügen, unerlaubten Zugriff auf Daten von Nutzern oder Firmen zu erhalten oder Dienste lahmzulegen. Dabei verändern sich Technologien in der Softwareentwicklung ständig, wodurch fortlaufend neue Möglichkeiten für Angriffe entstehen.
+
+Um herauszufinden, welche Probleme am häufigsten Sicherheitslücken verursachen, landet man relativ schnell bei der Common Weakness Enumeration, kurz CWE @noauthor_cwe_nodate-1. In dieser Liste werden verschiedene Schwachstellen aufgelistet und definiert, die bestimmte Angriffsmöglichkeiten von Software beschreiben.
+
+Die größte Schwachstelle laut der aktuellsten Statistik der CWE aus dem Jahr 2025 ist tatsächlich eine Injection Schwachstelle @noauthor_cwe_nodate, genauer gesagt die OS Command Injection. Sie entsteht, wenn Entwickler eine Anwendung nicht ausreichend gegen bösartige Argumente absichern. Um diese Schwachstelle soll es in dieser Arbeit jedoch nicht gehen.
+
+Platz zwei und drei im Ranking beschreiben Fehler, die mit der Speichersicherheit zusammenhängen. Ein Use After Free Bug landet auf Platz zwei des Rankings. Dabei handelt es sich um einen Programmierfehler, der dazu führt, dass über einen Dangling Pointer erneut auf Speicher zugegriffen wird, der bereits zur weiteren Nutzung freigegeben wurde. Ein Out of Bounds Write steht tatsächlich auf Platz drei, während dieser Fehler in der Statistik aus dem Jahr 2024 sogar Platz eins belegte @noauthor_cwe_nodate-2. Beim Out of Bounds Write wird Speicher geschrieben, der außerhalb des gültigen Bereichs eines Puffers liegt, typischerweise auf dem Stack. Solche Fehler treten besonders häufig in Programmiersprachen mit manueller Speicherverwaltung auf, allen voran in C. Dort liegt die Verwaltung des Speichers vollständig in der Hand des Entwicklers, wodurch eine fehlerhafte Nutzung schnell zu derartigen Schwachstellen führen kann.
+
+Diese beiden Fehlerphänomene sollen im weiteren Verlauf im Zusammenhang mit Speichersicherheit genauer betrachtet werden. Im Fokus steht das Lösungskonzept, das Rust anbietet, um derartige schwerwiegende Speicherfehler von Grund auf zu vermeiden. Die Theorie, die hinter dem Konzept der Speichersicherheit in Rust steckt, sowie kleine Beispiele dazu sollen in dieser Arbeit gezeigt werden.
