@@ -44,17 +44,4 @@
 - dieser Danger Score berechnet sich aus Häufigkeit des Auftretens und daraus wie groß die Auswirkungen auf die Sicherheit sind, wenn dieser Fehler auftritt
 - ausgehend von dieser Bewertung scheint Memory Safety ein ziemlich großes Problem darzustellen
 - daher wollen wir uns in diesem Vortrag einmal anschauen, warum Memory Safety zu so vielen Exploits führt
-- und welche ganze eigene Lösung Rust für diese Probleme anbietet 
-
-# Sources
-
-https://cwe.mitre.org/top25/archive/2025/2025_methodology.html
-
-- [Towards a Common Enumeration of Vulnerabilities](https://www.cve.org/Resources/General/Towards-a-Common-Enumeration-of-Vulnerabilities.pdf)
-  - Das ist ein White paper von der Erfindern/Gründern der MITRE Unternehmens in dem erklärt wird wie es dazu kam eine Fehler Datenbank zu Erstellen und was der Nutzen davon ist. Alter Paper aber gut.
-- [2025 CWE Top 25 Methodology](https://cwe.mitre.org/top25/archive/2025/2025_methodology.html)
-  - kurze aber präzise Beschreibung von CWE Bezeichnungen
-- [2025 CWE Top 10 KEV Weaknesses List Insights](https://cwe.mitre.org/top25/archive/2025/2025_kev_insights.html)
-  - Auf dieser Seite befinden sich Auswertungen, welche zeigen in was für Kategorien die Schwachstellen unterteilt werden können.
-- [2025 CWE Top 25 Most Dangerous Software Weaknesses](https://cwe.mitre.org/top25/archive/2025/2025_kev_list.html)
-  - Platzierung der größten Schwächen nach CWE sortiert
+- und welche ganze eigene Lösung Rust für diese Probleme anbietet
