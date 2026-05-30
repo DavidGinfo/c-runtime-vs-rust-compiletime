@@ -92,7 +92,7 @@ Use After Free bezeichnet einen Speicherzugriffsfehler, bei dem auf Speicher zug
 Im Gegensatz zum Stack, auf dem lokale Variablen und Funktionsparameter automatisch verwaltet werden, dient der Heap für Speicher, dessen Lebensdauer über den aktuellen Funktionsaufruf hinausgehen soll. Allokation und Freigabe erfolgen in C explizit über Funktionen wie #raw("malloc()") und #raw("free()"). Der Heap ist ein großer Speicherbereich, aus dem der Laufzeitallocator bei Bedarf einzelne Blöcke bereitstellt. Freigegebene Blöcke können bei späteren Allokationen erneut vergeben werden. Diese Flexibilität ermöglicht effiziente Speichernutzung, birgt aber das Risiko, dass Zeiger auf bereits freigegebenen Speicher weiterhin existieren. Das folgende C Beispiel veranschaulicht den Fehler, da C zusammen mit C++ zu den verbreitetsten Sprachen mit manueller Speicherverwaltung zählt.
 
 #figure(
-  image("assets/use_after_free_heap_c.svg", width: 100%),
+  image("assets/use_after_free_heap_c.drawio.svg", width: 100%),
   caption: [Vierphasiger Ablauf eines Use After Free Fehlers auf dem Heap @noauthor_cwe_nodate-5],
 ) <fig:uaf-stages>
 
@@ -145,7 +145,7 @@ Dieses Verhalten ist sicherheitskritisch, wenn über den neuen Zeiger vertraulic
 Neben Use After Free zählt Out of Bounds Write zu den häufigsten Speicherzugriffsfehlern aus der Einleitung. Anders als Use After Free betrifft dieser Fehler nicht nur den Heap, sondern tritt besonders häufig auf dem Stack auf. Der Stack dient der Verwaltung von Funktionsaufrufen in Programmen. Bei jedem Aufruf werden lokale Variablen, Funktionsparameter und Rücksprunginformationen in einem last in, first out Verfahren abgelegt. Beim Verlassen einer Funktion wird der zugehörige Stackbereich wieder freigegeben. Im Gegensatz zum Heap erfolgt diese Verwaltung automatisch durch den Compiler und die Laufzeitumgebung. Typischerweise wächst der Stack dabei in Richtung abnehmender Speicheradressen. Welche Variablen an welcher Adresse liegen, hängt vom Compiler und der Zielplattform ab. Gerade diese feste Nachbarschaft von Daten auf dem Stack macht Out of Bounds Write besonders gefährlich.
 
 #figure(
-  image("assets/out_of_bounds_write_stack_c.svg", width: 55%),
+  image("assets/out_of_bounds_write_stack_c.drawio.svg", width: 55%),
   caption: [Out of Bounds Write auf dem Stack @noauthor_cwe_nodate-6],
 ) <fig:oob-stack>
 
