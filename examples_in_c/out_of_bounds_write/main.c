@@ -1,13 +1,14 @@
 #include <stdio.h>
 
-int main(int argc, char **argv) {
-    int var = 5;
+void write_arr_at_index(int *arr, int index) {
+    arr[index] = 99; 
+}
 
-    int arr[2];
-    
-    arr[0] = 2;
-    arr[1] = 2;
-    arr[2] = 2;
+int main() {
+    int var = 5;
+    int array[2] = {2, 2};
+
+    write_arr_at_index(array, 2); 
 
     printf("%d", var);
 }

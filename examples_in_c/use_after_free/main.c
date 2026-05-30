@@ -1,17 +1,16 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
-
-#define BUFFER_SIZE 512
 
 int main(int argc, char **argv) {
-    char *bufferPtr1 = (char *) malloc(BUFFER_SIZE);
-    
-    free(bufferPtr1);
+    int *buffer_ptr1 = malloc(sizeof(int));
+    *buffer_ptr1 = 21;
 
-    char *bufferPtr2 = (char *) malloc(BUFFER_SIZE);
+    int *buffer_ptr2 =  buffer_ptr1;
 
-    strncpy(bufferPtr2, "blubb", BUFFER_SIZE);
+    free(buffer_ptr1);
 
-    printf("%s", bufferPtr1);
+    int *buffer_ptr3 = malloc(sizeof(int));
+    *buffer_ptr3 = 42;
+
+    printf("%d", *buffer_ptr2);
 }
