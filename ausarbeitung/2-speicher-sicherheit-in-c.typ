@@ -1,7 +1,5 @@
 = Speichersicherheit als zentrales Sicherheitsproblem
 
-#set figure(supplement: [Abbildung])
-
 Bevor die Speichersicherheitsprobleme im Detail betrachtet werden, lohnt sich ein Blick auf die zugrunde liegende Statistik. Dafür wird zunächst erläutert, wie die CWE Schwachstellen erfasst, bewertet und in Kategorien einteilt. So lässt sich nachvollziehen, welche Bedeutung Speichersicherheit in den Auswertungen tatsächlich einnimmt. Anschließend wird der Begriff Speichersicherheit präzisiert. Die beiden zuvor genannten Schwachstellen werden anhand kurzer C Beispiele nachvollzogen. Dabei wird Schritt für Schritt gezeigt, wie Use After Free und Out of Bounds Write in der Praxis entstehen können und warum solche Fehler in Sprachen mit manueller Speicherverwaltung besonders leicht auftreten. Zum Abschluss des Kapitels werden die sicherheitsrelevanten Konsequenzen dieser Fehler betrachtet. Darauf aufbauend werden gängige Lösungsansätze vorgestellt, um damit den Übergang zum folgenden Kapitel vorzubereiten, in dem Rusts Ansatz zur Compilezeitprüfung von Speichersicherheit im Mittelpunkt steht.
 
 == Erfassung und Bewertung von Schwachstellen

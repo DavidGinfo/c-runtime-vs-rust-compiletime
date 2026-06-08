@@ -76,7 +76,7 @@
 #set text(size: 12pt)
 #set par(justify: true)
 #show heading.where(level: 1): set heading(supplement: [Chapter])
-#set figure(gap: 1em)
+#set figure(supplement: [Abbildung], gap: 1em)
 #show figure.caption: c => [
   #text(weight: "bold")[
     #c.supplement #c.counter.display(c.numbering)
