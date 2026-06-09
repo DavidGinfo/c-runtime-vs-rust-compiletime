@@ -31,8 +31,8 @@ fn main() {
 
     {
         let value = 5;
-        rerference = &value;
+        reference = &value;
     }
 
-    println!("{}", rerference);
+    println!("{}", reference);
 }
