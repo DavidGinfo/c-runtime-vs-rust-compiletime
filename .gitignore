@@ -1,2 +1,23 @@
-# Microsoft Office temporary/lock files (e.g. ~$Memory_Safety_Rust.pptx)
+# Rust build output
+target/
+**/target/
+
+# Local compiled examples and debug symbols
+*.exe
+*.pdb
+*.o
+*.rlib
+*.rmeta
+
+# Editor and operating-system noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
 ~$*
+
+# Generated documentation/build output
+*.pdf
+*.aux
+*.log
+*.out
